@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hoagie To Go</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<nav class="navigation">
+		<%= link_to "Startseite", root_path %>
+		<%= link_to "Ingredients", ingredients_path %>
+		<%= link_to "Add new Ingredient", new_ingredient_path %>
+	</nav>
+
+	<div class="content-wrapper">
+<%= yield %>
+	</div>
+</body>
+</html>
