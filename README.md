@@ -2,7 +2,7 @@
 demo project to make some first steps in ruby on rails
 ### start
 ```
-npm install
+rails server
 ```
 ### refresh db
 ```
