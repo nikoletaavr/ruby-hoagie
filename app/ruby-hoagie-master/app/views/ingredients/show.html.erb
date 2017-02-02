@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag @ingredient.image_url %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @ingredient.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ingredient.description %>
+</p>
+
+
+
+<p>
+  <strong>Price:</strong>
+  <%= @ingredient.price %>
+</p>
+
+
+<%= link_to 'Back', ingredients_path %>

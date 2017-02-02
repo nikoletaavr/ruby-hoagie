@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+  <h1>All Ingredients Avaliable</h1>
+
+  <table class="">
+    </thead>
+
+    <tbody>
+      <% @ingredients.each do |ingredient| %>
+        <tr>
+          <td class="image"><%= image_tag ingredient.image_url %></td>
+          <td class="title"><%= ingredient.title %></td>
+          <td class="description"><%= ingredient.description %></td>
+          <td class="price"><%= ingredient.price %> €</td>
+          <td class="details"><%= link_to 'Show Details', ingredient %></td>
+
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
